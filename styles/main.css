@@ -1,0 +1,127 @@
+/*----------------
+GLOBALES
+----------------*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    background: linear-gradient(to top, rgb(31, 33, 34), blue);
+    font-family: Arial, Helvetica, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*----------------
+ARTICLE
+----------------*/
+article {
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0px 0px 7px 0px black;
+}
+
+    /*----------------
+    HEADER
+    ----------------*/
+    .header {
+        position: relative;
+    }
+
+        figure > img {
+            filter: blur(2px);
+        }
+
+        .user_img {
+            box-shadow: 0px 0px 7px 0px black;
+            border-radius: 100%;
+            display: inline-block;
+            position: absolute;
+            bottom: -60px;
+            left: 50%;
+            margin-left: -60px;
+        }
+
+    /*----------------
+    MAIN
+    ----------------*/
+    .main {
+        background-color: white;
+        text-align: center;
+    }
+
+        /*.user_info*/
+        .user_info {
+            padding: 80px 0 20px 0;
+        }
+
+            .user_info > p {
+                color: #25B97C;
+                font-weight: bold;
+            }
+
+            .user_info > h1 {
+                color: #626669;
+                margin-top: 7px;
+                margin-bottom: 5px;
+            }
+
+            .user_info > h3 {
+                color: #848484;
+                font-size: 15px;
+                font-weight: 0;
+            }
+
+        /*.user_skills*/
+        .user_skills {
+            padding: 10px 0 30px 0;
+            list-style: none;
+
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+            .user_skills > li > h1 {
+                color: #626669;
+            }
+
+            .user_skills > li > p {
+                color: #848484;
+                margin-top: 2px;
+                font-size: 13px;
+            }
+
+    /*----------------
+    FOOTER
+    ----------------*/
+    .footer {
+        text-align: center;
+    }
+
+        .footer > a {
+            box-shadow: 0px 0px 7px 0px blueviolet;
+            box-sizing: border-box;
+            width: 100%;
+            background-color: blueviolet;
+            display: inline-block;
+            padding: 25px;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 18px;
+        }
+
